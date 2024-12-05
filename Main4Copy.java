@@ -83,7 +83,7 @@ public class Main4Copy extends OpMode {
         telemetry.addData("Status", "Started");
         telemetry.update();
 
-        GRABSERVO.setPosition(1);
+        GRABSERVO.setPosition(0);
     }
 
 
