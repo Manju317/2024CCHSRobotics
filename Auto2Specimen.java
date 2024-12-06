@@ -84,7 +84,7 @@ public class Auto2Specimen extends OpMode {
         telemetry.addData("Status", "Started");
         telemetry.update();
 
-        GRABSERVO.setPosition(1);
+        GRABSERVO.setPosition(0);
         
         driveforward(3);
         armlift();
