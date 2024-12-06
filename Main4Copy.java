@@ -126,7 +126,7 @@ public class Main4Copy extends OpMode {
         
         if (gamepad2.right_stick_y > 0) {     
             ARMMOTOR.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-            ARMMOTOR.setPower(-gamepad2.right_stick_y/8);
+            ARMMOTOR.setPower(-gamepad2.right_stick_y/4);
             armHoldPos = ARMMOTOR.getCurrentPosition();
         
         } else if (gamepad2.right_stick_y < 0) {
@@ -164,11 +164,11 @@ public class Main4Copy extends OpMode {
 
         if (gamepad2.dpad_down) {
                 
-            GRABSERVO.setPosition(1);
+            GRABSERVO.setPosition(0.5);
 
         } else if (gamepad2.dpad_up) {
     
-            GRABSERVO.setPosition(0.5);
+            GRABSERVO.setPosition(0);
         }
 
 
