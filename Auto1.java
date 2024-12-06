@@ -107,7 +107,7 @@ public class Auto1 extends OpMode {
         
     }
     public void armretract(){
-        while(EXTENDMOTOR.getCurrentPosition() < 5800){
+        while(EXTENDMOTOR.getCurrentPosition() < 20){
         encoderMovement(EXTENDMOTOR, 0, -1);
         }
     }
